@@ -1,15 +1,13 @@
 %define upstream_name    MooseX-Param
-%define upstream_version 0.02
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.02
+Release:	7
 
 Summary:	Simple role to provide a standard param method
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/MooseX-Param
-Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/MooseX-Param-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/MooseX-Param-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ I found that I had written this code over and over and over and over again,
 and each time it was the same. So I thought, why not put it in a role?
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
