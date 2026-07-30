@@ -1,13 +1,14 @@
 %define upstream_name    MooseX-Param
+%define upstream_version 0.02
 Name:		perl-%{upstream_name}
 Version:	0.02
-Release:	7
+Release:	1
 
 Summary:	Simple role to provide a standard param method
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/MooseX-Param
-Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/MooseX-Param-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/ST/STEVAN/MooseX-Param-0.02.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -41,13 +42,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc ChangeLog META.yml README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.20.0-2mdv2011.0
-+ Revision: 657797
-- rebuild for updated spec-helper
-
-* Sat Jan 01 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.20.0-1mdv2011.0
-+ Revision: 627148
-- import perl-MooseX-Param
 
